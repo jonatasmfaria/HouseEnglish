@@ -11,18 +11,29 @@ const ProdutosController= {
     sucesso: (req, res)=>{
         return res.render("sucesso.ejs")
     },
-    viewAttForm: (req , res)=>{
+        viewAttForm: (req , res)=>{
         let {id} = req.params
         let prod = [
             {id: 1, nome: "produto X", preco: 10},
             {id: 2, nome: "produto Y", preco: 12}
         ]
         //res.send(`Eu quero editar o produto ${id}`)
-        res.render('editarProduto.ejs', {produto:prod[id]})
+        res.render('editarProduto.ejs', {produtosAB:prod[id]})
     },
     editar: (req, res)=> {
         let {nomeProduto, precoProduto} = req.body
         res.send(`Voce editou o produto ${nomeProduto} de preco: ${precoProduto}`)
+    },
+    listarProdutos: (req, res)=>{
+        let prod = [
+            {id: 1, nome: "produto X", preco: 10},
+            {id: 2, nome: "produto Y", preco: 12}
+        ]
+        res.render('listaProdutos', {listarProdutosAA:prod})
+    },
+    deletarProduto: (req, res)=>{
+  let {id} = req.params
+  res.send(`Estou deletando o produto ${id}`)
     }
 }
 

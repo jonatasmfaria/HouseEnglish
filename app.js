@@ -7,7 +7,7 @@ var methodOverride = require('method-override')
 
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users');
-var produtosRouter = require('./src/routes/produtos');
+var productRouter = require('./src/routes/produtos');
 
 var app = express();
 
@@ -24,7 +24,11 @@ app.use(methodOverride('_method'))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/produtos', produtosRouter);
+app.use('/produtos', productRouter);
+
+app.use((req,res)=>{
+  return res.status(404).render('not-found.ejs')
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

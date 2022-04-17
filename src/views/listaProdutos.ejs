@@ -1,0 +1,14 @@
+<%- include('./partials/header.ejs') %>
+<h1>Produtos - Lista</h1>
+<p>Lista</p>
+<h1>Lista de Produtos</h1>
+<ul>
+<% listarProdutosAA.forEach(produto => {%>
+    <li><%= produto.nome %> 
+    <form action="/produtos/deletar/<%= produto.id %>?_method=DELETE" method="POST">
+        <button type="submit">Deletar</button>
+    </form>
+    </li>
+    <% }) %> 
+</ul>
+<%- include('./partials/footer.ejs') %>
