@@ -1,0 +1,15 @@
+<%- include('./partials/header.ejs') %>
+    <h1>Estudantes</h1>
+    <p>Bem vindo Estudante</p>
+    <% let estudantes=[ {nome: 'Jonatas' , idade: 26}, {nome: 'Jessica' , idade: 24}, {nome: 'Geisse' , idade: 23},
+        {nome: 'Geovanna' , idade: 22} ] %>
+        <ul>
+            <% for(let estudante of estudantes){%>
+                <li>
+                    <%= estudante.nome %>
+                        <img src="/images/homer.gif" height="42" width="42">
+                </li>
+                <% }%>
+
+        </ul>
+        <%- include('./partials/footer.ejs') %>

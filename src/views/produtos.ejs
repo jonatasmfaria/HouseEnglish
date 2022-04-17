@@ -1,0 +1,10 @@
+<%- include('./partials/header.ejs') %>
+  <h1>Produtos - Cadastro form</h1>
+  <p>Produtos</p>
+  <h1>Cadastro de Produtos</h1>
+  <form action="/produtos/criar" method="POST">
+      <input type="text" name="nomeProduto">
+      <input type="number" name="precoProduto">
+      <button type="submit">Cadastrar</button>
+  </form>
+  <%- include('./partials/footer.ejs') %>
