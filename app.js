@@ -8,6 +8,8 @@ var methodOverride = require('method-override')
 var indexRouter = require('./src/routes/index');
 var usersRouter = require('./src/routes/users');
 var productRouter = require('./src/routes/produtos');
+var usersRouter = require('./src/routes/users');
+var logMiddleware = require('./middlewares/logs');
 
 var app = express();
 
@@ -21,10 +23,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'))
+app.use(logMiddleware)
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/produtos', productRouter);
+app.use('/users', usersRouter);
 
 app.use((req,res)=>{
   return res.status(404).render('not-found.ejs')

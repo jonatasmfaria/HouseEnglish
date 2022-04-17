@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs') %>
+    <h1>Criar usuário</h1>
+    <% if(typeof(listaDeErrors) !=undefined) {%>
+        <p style="color: red;">Error</p>
+        <ul>
+            <% listaDeErrors.forEach((error) => {%> 
+                <li><%= error.msg %> </li>
+                <% }); %> 
+        </ul>
+        <% }%>
+            <form action="/users/criar" method="POST">
+                <ul>
+                    <input type="email" name="email" >
+                </ul>
+                <ul>
+                    <input type="password" name="password" >
+                </ul>
+                <ul>
+                    <button type="submit">Cadastrar</button>
+                </ul>
+            </form>
+            <%- include('./partials/footer.ejs') %>
