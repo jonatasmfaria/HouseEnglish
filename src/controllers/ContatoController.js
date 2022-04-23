@@ -1,5 +1,5 @@
-const ContatoController= {
-    index: (req, res)=>{
+const ContatoController = {
+    index: (req, res) => {
         return res.render("contato.ejs")
     }
 }

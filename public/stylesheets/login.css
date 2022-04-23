@@ -1,0 +1,52 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%)
+}
+
+.tela-login {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translate (-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: aliceblue;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.input {
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.esqueciSenha {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+.botao {
+    background-color: white;
+    padding: 5px;
+    width: 50%;
+    border-radius: 5px;
+    font-size: white;
+    text-align: center;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cadastro {
+    color: aliceblue;
+    font-size: 12px;
+    margin: center;
+}
+
+.cliqueAqui {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 40px;
+}

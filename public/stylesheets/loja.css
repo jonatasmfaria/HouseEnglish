@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@400;500;600;700&family=Righteous&family=Sarala:wght@400;700&family=Varela+Round&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%)
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 72px;
+    max-width: 100%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40px;
+
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFF2E7;
+}
+
+.conteudo-principal-imagem {
+    width: 60%;
+}
+
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid WHITE;
+    padding-top: 48px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin: bottom 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFF2E7
+}
+
+.caneta {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 55px;
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    max-width: 100%;
+    color: #FFF2E7;
+    font-size: 20px;
+    font-family: 'Sarala', sans-serif;
+    border-radius: 15px;
+}
+
+.imagem-caneta {
+    width: 50%;
+    height: 50%;
+    margin-left: 40px;
+}
+
+.caneca {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 30px;
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    max-width: 100%;
+    color: #FFF2E7;
+    font-size: 20px;
+    font-family: 'Sarala',
+        sans-serif;
+    border-radius: 15px;
+}
+
+.imagem-caneca {
+    width: 100%;
+    height: 100%;
+    position: center;
+}
+
+.livros {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 30px;
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    max-width: 100%;
+    color: #FFF2E7;
+    font-size: 20px;
+    font-family: 'Sarala',
+        sans-serif;
+    border-radius: 15px;
+}
+
+.imagem-livros {
+    width: 100%;
+    height: 100%;
+    position: center;
+}
+
+.livro-ilustrado {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 30px;
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    max-width: 100%;
+    color: #FFF2E7;
+    font-size: 20px;
+    font-family: 'Sarala',
+        sans-serif;
+    border-radius: 15px;
+}
+
+.imagem-ilustrado {
+    width: 100%;
+    height: 100%;
+    position: center;
+}
+
+.planner {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 55px;
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    max-width: 100%;
+    color: #FFF2E7;
+    font-size: 20px;
+    font-family: 'Sarala',
+        sans-serif;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.imagem-planner {
+    width: 100%;
+    height: 100%;
+    position: center;
+}
+
+.atividades {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 30px;
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    max-width: 100%;
+    color: #FFF2E7;
+    font-size: 20px;
+    font-family: 'Sarala',
+        sans-serif;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.imagem-atividades {
+    width: 55%;
+    height: 90%;
+    position: center;
+    margin-left: 50px;
+}
+
+.cinquenta-aulas-ingles {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 30px;
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    padding: 20px;
+    max-width: 100%;
+    color: #FFF2E7;
+    font-size: 20px;
+    font-family: 'Sarala',
+        sans-serif;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.imagem-50-aulas-ingles {
+    width: 70%;
+    height: 90%;
+    position: center;
+    margin-left: 37px;
+}
+
+.comprar {
+    border-radius: 15px;
+    width: 30%;
+    background-color: #FFF2E7;
+    border-color: #FFF2E7;
+    position: auto;
+    max-width: 100%;
+    margin-left: 85px;
+    border: 3px solid #E6B3B3;
+    cursor: pointer;
+}
+
+.rodape {
+    margin-top: 40px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.endereco {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    display: flex;
+    padding-top: 10px;
+    scroll-padding-inline-end: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.rodape {
+    padding: 32px;
+    align-items: center;
+    border-top: 0.1px solid rgb(255, 255, 255);
+}

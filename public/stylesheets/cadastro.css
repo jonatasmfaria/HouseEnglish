@@ -1,0 +1,68 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%);
+    max-width: 100%;
+}
+
+.tela-login {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translate (-50%, -50%);
+    padding: 60px;
+    border-radius: 15px;
+    color: aliceblue;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    max-width: 100%;
+}
+
+.cadastro {
+    max-width: 100%;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+input.nomeCompleto {
+    padding: 0.5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+input.telefone {
+    padding: 0.5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+input.email {
+    padding: 0.5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+input.password {
+    padding: 0.5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.nivel {
+    padding: 0.5px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.text {
+    max-width: 100%;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.botao {
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: white;
+    max-width: 100%;
+}

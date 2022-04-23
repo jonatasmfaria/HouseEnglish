@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Um bot que ira moderar e deixar a sua comunidade segura de um jeito facil">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/loja.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="images/bandeira inglaterra.png" alt="logo da comunidade">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="/">Home</a>
+            <a class="cabecalho-menu-item" href="/login">Login</a>
+        </nav>
+    </header>
+    <main>
+        <div class="conteudo"></div>
+        <section class="items">
+            <% produtos.forEach(prd=> {%>
+                <div class="caneta" id="caneta">
+                    <img class="imagem-caneta" src="images/<%=prd.img %>" alt="imagem-caneta" name="imgProduto"></img>
+                    <p name="nomeProduto">
+                        <%=prd.nome %>
+                    </p>
+                    <p name="valorProduto">
+                        R$ <%=prd.preco %>
+                    </p>
+                    <button class="comprar" type="submit">Comprar</button>
+                </div>
+                <% }) %>
+        </section>
+    </main>
+    <%- include('./partials/footer2.ejs') %>
+</body>
+
+</html>

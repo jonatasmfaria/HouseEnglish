@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="images/bandeira inglaterra.png" alt="logo da comunidade">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="/">Home</a>
+        </nav>
+    </header>
+    <main>
+        <div class="conteudo"></div>
+        <div class="tela-login">
+            <h1 class="cadastro">Cadastre-se</h1>
+            <input class="nomeCompleto" type="nomecompleto" placeholder="Informe o nome completo"></input>
+            <br><br>
+            <input class="telefone" type="tel" maxlength="16" placeholder="(99) 9 9999-9999"></input>
+            <br><br>
+            <input class="email" type="text" placeholder="Informe o seu e-mail"></input>
+            <br><br>
+            <input class="password" type="password" placeholder="Informe uma senha"></input>
+            <br><br>
+            <label for="nivel">Nível</label>
+            <select class="nivel" name="nivel">
+                <option class="nivel" selected disabled>Selecione</option>
+                <option class="nivel" value="basico">Básico</option>
+                <option class="nivel" value="intermediario">Intermediário</option>
+                <option class="nivel" value="avancado">Avançado</option>
+                <br><br>
+            </select>
+
+            <div style="padding-top: 10px ;">
+                <label class="text" for="contato">Qual a melhor forma para entrarmos em contato?</label>
+                <br>
+                <input class="text" type="radio" name="email" value="email">
+                <label class="text" for="email">Email</label>
+                <input class="text" type="radio" name="ligacao" value="ligacao">
+                <label class="text" for="ligacao">Ligação</label>
+                <input class="text" type="radio" name="whatsapp" value="whatsapp">
+                <label class="text" for="whatsapp">WhatsApp</label>
+            </div>
+            <br><br>
+            <button class="botao" type="submit">Entrar</button>
+        </div>
+    </main>
+
+</body>
+
+</html>

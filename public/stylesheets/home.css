@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@400;500;600;700&family=Righteous&family=Sarala:wght@400;700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #b9112d 16.62%, #1442c2 85.16%)
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 72px;
+    max-width: 100%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40px;
+
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFF2E7;
+}
+
+.conteudo-principal-imagem {
+    width: 60%;
+}
+
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid WHITE;
+    padding-top: 48px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin: bottom 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFF2E7
+}
+
+
+
+.id-sobre {
+    color: transparent;
+}
+
+.quemSomos {
+    color: #FFF2E7;
+    font-size: 25px;
+    font-family: 'Sarala', sans-serif;
+    margin-left: 5%;
+}
+
+.quemSomosTexto {
+    color: #FFF2E7;
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+    margin-left: 110px;
+}
+
+.endereco {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    display: flex;
+    padding-top: 10px;
+    scroll-padding-inline-end: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.rodape {
+    padding: 32px;
+    align-items: center;
+    border-top: 0.1px solid rgb(255, 255, 255);
+}
