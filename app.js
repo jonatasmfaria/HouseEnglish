@@ -4,23 +4,32 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var methodOverride = require('method-override') // require de metodo para sobrescrita do METHOD para fazer delete e put
+var session = require('express-session'); // session
 
 // Controladores do site
 var homeRouter = require('./src/routes/home');
+var usuarioRouter = require('./src/routes/usuario');// nao
 var lojaRouter = require('./src/routes/loja');
 var loginRouter = require('./src/routes/login');
-var cadastroRouter = require('./src/routes/cadastro');
-var indexRouter = require('./src/routes/index');
-var usersRouter = require('./src/routes/users');
-var productRouter = require('./src/routes/produtos');
-var usersRouter = require('./src/routes/users');
-var logMiddleware = require('./middlewares/logs');
+var cadastroRouter = require('./src/routes/cadastro');// nao
+var indexRouter = require('./src/routes/index');// nao
+var usersRouter = require('./src/routes/users');// nao
+var productRouter = require('./src/routes/produtos');// nao
+var usersRouter = require('./src/routes/users');// nao
+var logMiddleware = require('./middlewares/logs');// nao
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'ejs');
+
+
+app.use(session({
+  secret: `projetoExpress`,
+  resave: true,
+  saveUninitialized: true
+}))
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -32,13 +41,14 @@ app.use(logMiddleware)
 
 // Rotas do site
 app.use('/', homeRouter);
+app.use('/usuarios', usuarioRouter);// nao
 app.use('/loja', lojaRouter);
 app.use('/login', loginRouter);
-app.use('/cadastro', cadastroRouter);
-app.use('/index', indexRouter);
-app.use('/users', usersRouter);
-app.use('/produtos', productRouter);
-app.use('/users', usersRouter);
+app.use('/cadastro', cadastroRouter);// nao
+app.use('/index', indexRouter);// nao
+app.use('/users', usersRouter);// nao
+app.use('/produtos', productRouter);// nao
+app.use('/users', usersRouter);// nao
 
 // Para chamar a pagina de não encontrado quando o usuário entrar em uma tela que 
 // nao existe ou ocorrer falha nos direcionamentos das paginas
