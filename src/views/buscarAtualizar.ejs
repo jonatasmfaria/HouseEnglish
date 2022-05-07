@@ -44,4 +44,9 @@
             <button type="submit">Atualizar</button>
         </ul>
     </form>
+    <form action="/atualizar/deletar/<%= myCli.pk_id_cliente %>?_method=DELETE" method="POST">
+        <ul>
+            <button type="submit">Deletar</button>
+        </ul>
+    </form>
     <%- include('./partials/footer.ejs') %>

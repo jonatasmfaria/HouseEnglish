@@ -44,6 +44,20 @@ const AtualizarController = {
                 }
             });
         return res.send('Sucesso Atualizacao!')
+    },
+    delete: async (req, res) => {
+        let { id } = req.params
+        let findCli = await Cliente.findOne({ where: { pk_id_cliente: parseInt(id) } });
+        await Cliente.destroy({
+            where: {
+                pk_id_cliente: parseInt(id)
+            }
+        });
+        await Endereco.destroy({
+            where: {
+                pk_id_endereco: findCli.fk_endereco
+            }
+        });
     }
 }
 
