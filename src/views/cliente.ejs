@@ -1,0 +1,44 @@
+<%- include('./partials/header.ejs') %>
+    <h1>Criar usuário</h1>
+    <form action="/cliente/criar" method="POST">
+        <ul>
+            <input type="text" name="nome" placeholder="Nome">
+        </ul>
+        <ul>
+            <input type="tel" name="telefone" placeholder="telefone">
+        </ul>
+        <ul>
+            <input type="text" name="cpf" placeholder="cpf">
+        </ul>
+        <ul>
+            <input type="email" name="email" placeholder="email">
+        </ul>
+        <ul>
+            <input type="password" name="senha" placeholder="senha">
+        </ul>
+        <ul>
+            <input type="text" name="cep" placeholder="cep">
+        </ul>
+        <ul>
+            <input type="text" name="rua" placeholder="rua">
+        </ul>
+        <ul>
+            <input type="number" name="numero" placeholder="numero">
+        </ul>
+        <ul>
+            <input type="text" name="complemento" placeholder="complemento">
+        </ul>
+        <ul>
+            <input type="text" name="bairro" placeholder="bairro">
+        </ul>
+        <ul>
+            <input type="text" name="cidade" placeholder="cidade">
+        </ul>
+        <ul>
+            <input type="text" name="estado" placeholder="estado">
+        </ul>
+        <ul>
+            <button type="submit">Cadastrar</button>
+        </ul>
+    </form>
+    <%- include('./partials/footer.ejs') %>

@@ -23,12 +23,13 @@
         <section class="items">
             <% produtos.forEach(prd=> {%>
                 <div class="caneta" id="caneta">
-                    <img class="imagem-caneta" src="images/<%=prd.img %>" alt="imagem-caneta" name="imgProduto"></img>
+                    <img class="imagem-caneta" src="images/<%=prd.nome_imagem %>" alt="imagem-caneta"
+                        name="imgProduto"></img>
                     <p name="nomeProduto">
                         <%=prd.nome %>
                     </p>
                     <p name="valorProduto">
-                        R$ <%=prd.preco %>
+                        R$ <%=prd.valor %>
                     </p>
                     <button class="comprar" type="submit">Comprar</button>
                 </div>

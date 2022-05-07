@@ -9,6 +9,7 @@ var session = require('express-session'); // session
 // Controladores do site
 var homeRouter = require('./src/routes/home');
 var usuarioRouter = require('./src/routes/usuario');// nao
+var clienteRouter = require('./src/routes/cliente');
 var lojaRouter = require('./src/routes/loja');
 var loginRouter = require('./src/routes/login');
 var cadastroRouter = require('./src/routes/cadastro');// nao
@@ -42,6 +43,7 @@ app.use(logMiddleware)
 // Rotas do site
 app.use('/', homeRouter);
 app.use('/usuarios', usuarioRouter);// nao
+app.use('/cliente', clienteRouter);
 app.use('/loja', lojaRouter);
 app.use('/login', loginRouter);
 app.use('/cadastro', cadastroRouter);// nao

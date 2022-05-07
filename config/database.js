@@ -1,7 +1,7 @@
 const config = {
     username: 'root',
     password: '123456789',
-    database: 'nodejs',
+    database: 'houseEnglish', //musimundos
     host: 'localhost',
     dialect: 'mysql'
 }

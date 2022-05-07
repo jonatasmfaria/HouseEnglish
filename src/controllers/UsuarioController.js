@@ -2,10 +2,16 @@ const fs = require('fs')
 const path = require('path')
 const bcrypt = require('bcrypt')
 
+//const { Usuario } = require('../../models')
+
 let usuarioJson = path.join("usuarios.json")
 
 // Chamadas da login page
 let UsuarioController = {
+
+    index: (req, res) => {
+
+    },
     registroForm: (req, res) => {
         res.render("registroUsuario.ejs")
     },
