@@ -22,7 +22,7 @@ const ClienteController = {
             email,
             senha: senhaBcrypt
         })
-        // console.log(end, cli)
+        return res.send(cli)
     }
 }
 

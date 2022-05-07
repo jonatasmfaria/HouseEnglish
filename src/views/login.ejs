@@ -20,14 +20,14 @@
     <main>
         <div class="conteudo"></div>
         <div>
-            <form action="/">
+            <form action="/login/sucesso" method="POST">
                 <div class="tela-login">
                     <div>
                         <div>
-                            <input type="email" id="loginEmail" placeholder="E-mail" />
+                            <input type="email" name="email" placeholder="E-mail" required />
                         </div>
                         <div>
-                            <input type="password" placeholder="loginPassword">
+                            <input type="password" name="senha" placeholder="senha" required>
                         </div>
                         <button class="botao" type="submit">Entrar</button>
                         <div>

@@ -1,0 +1,47 @@
+<%- include('./partials/header.ejs') %>
+    <h1>Criar usuário</h1>
+    <form action="/atualizar/update?_method=PUT" method="POST">
+        <ul>
+            <input type="number" name="id_cliente" placeholder="numClienteID" value="<%=myCli.pk_id_cliente%>" hidden>
+        </ul>
+        <ul>
+            <input type="text" name="nome" placeholder="Nome" value="<%=myCli.nome%>">
+        </ul>
+        <ul>
+            <input type="tel" name="telefone" placeholder="telefone" value="<%=myCli.telefone%>">
+        </ul>
+        <ul>
+            <input type="text" name="cpf" placeholder="cpf" value="<%=myCli.cpf%>">
+        </ul>
+        <ul>
+            <input type="email" name="email" placeholder="email" value="<%=myCli.email%>">
+        </ul>
+        <ul>
+            <input type="password" name="senha" placeholder="senha" required>
+        </ul>
+        <ul>
+            <input type="text" name="cep" placeholder="cep" value="<%=myEnd.cep%>">
+        </ul>
+        <ul>
+            <input type="text" name="rua" placeholder="rua" value="<%=myEnd.rua%>">
+        </ul>
+        <ul>
+            <input type="number" name="numero" placeholder="numero" value="<%=myEnd.numero%>">
+        </ul>
+        <ul>
+            <input type="text" name="complemento" placeholder="complemento" value="<%=myEnd.complemento%>">
+        </ul>
+        <ul>
+            <input type="text" name="bairro" placeholder="bairro" value="<%=myEnd.bairro%>">
+        </ul>
+        <ul>
+            <input type="text" name="cidade" placeholder="cidade" value="<%=myEnd.cidade%>">
+        </ul>
+        <ul>
+            <input type="text" name="estado" placeholder="estado" value="<%=myEnd.estado%>">
+        </ul>
+        <ul>
+            <button type="submit">Atualizar</button>
+        </ul>
+    </form>
+    <%- include('./partials/footer.ejs') %>
