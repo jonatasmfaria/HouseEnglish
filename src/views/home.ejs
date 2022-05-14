@@ -17,7 +17,14 @@
             <a class="cabecalho-menu-item" href="/loja">Conheça
                 nossos produtos</a>
             <a class="cabecalho-menu-item" href="#sobre">Sobre nós</a>
-            <a class="cabecalho-menu-item" href="/login">Login</a>
+            <a class="cabecalho-menu-item" href="/login"> Login </a>
+            <% if(usuario !=undefined){%>
+                <a class="cabecalho-menu-item" href="/atualizar/<%=usuario.pk_id_cliente%>/buscar">
+                    <%= usuario.nome%>
+                </a>
+                <% }else {%>
+                    <a class="cabecalho-menu-item" href="/login"> Login </a>
+                    <% }%>
         </nav>
     </header>
     <main class="conteudo">

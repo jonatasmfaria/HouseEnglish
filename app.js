@@ -19,6 +19,8 @@ var usersRouter = require('./src/routes/users');// nao
 var productRouter = require('./src/routes/produtos');// nao
 var usersRouter = require('./src/routes/users');// nao
 var logMiddleware = require('./middlewares/logs');// nao
+var auth = require('./middlewares/auth')
+var cookieLogin = require('./middlewares/cookieLogin')
 
 var app = express();
 
@@ -29,7 +31,7 @@ app.set('view engine', 'ejs');
 
 app.use(session({
   secret: `projetoExpress`,
-  resave: true,
+  resave: false,
   saveUninitialized: true
 }))
 
@@ -40,13 +42,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method')) // Sobrescrita do método method para usar delete e put
 app.use(logMiddleware)
+app.use(cookieLogin)
 
 // Rotas do site
 app.use('/', homeRouter);
 app.use('/usuarios', usuarioRouter);// nao
 app.use('/cliente', clienteRouter);
 app.use('/atualizar', atualizarRouter);
-app.use('/loja', lojaRouter);
+app.use('/loja', auth, lojaRouter);
 app.use('/login', loginRouter);
 app.use('/cadastro', cadastroRouter);// nao
 app.use('/index', indexRouter);// nao
